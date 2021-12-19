@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* general */
+.container{
+    @apply w-container-mobile my-0 mx-auto md:w-container-lg;
+}
+
+
+/* Navbar */
+.nav-bar{
+    @apply sticky z-20 top-0 mt-hero-top mb-0 h-nav text-blue;
+}
+
+.navbar-container{
+    @apply flex h-nav w-container-mobile mx-auto justify-between items-center;
+}
+
+.navbar-link{
+    @apply md:ml-10 text-h4 cursor-pointer;
+}
+
+/* Hero */
+.hero{
+    @apply bg-hero-bg bg-cover bg-center bg-no-repeat py-64 lg:py-80 mt-hero-top flex items-center;
+}
+
+/* Join-us */
+.join-us-container{
+    @apply w-container-mobile mx-auto my-0 gap-8 lg:gap-16 grid sm:grid-cols-2 md:w-container-lg;;
+}
+
+.join-us-no{
+    @apply text-2xl md:text-h3 text-yellow mr-5;
+}

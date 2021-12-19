@@ -1,0 +1,33 @@
+/* nav js */
+.navlink.active{
+ border-bottom: 3px solid #1a3954;
+}
+
+
+/* faq js */
+.faq:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("./images/dot.svg") no-repeat center center;
+  width: 384px;
+  height: 209px;
+  max-width: 80vw;
+  transform: translateX(15%) translateY(-45%);
+}
+
+/* footer.js */
+.footer:before {
+  content: url(./images/footer.svg);
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  margin-left: 20px;
+}
+
+@media (max-width: 1024px) {
+  .footer::before {
+    display: none;
+  }
+}
